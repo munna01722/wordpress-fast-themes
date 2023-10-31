@@ -26,6 +26,9 @@
   }
   add_action( 'wp_enqueue_scripts', 'ft_css_js_calling');
 
+
+  //google Fonts Enqueue
+
   // theme function
   function ft_customizar_register($wp_customize){
 
@@ -35,31 +38,28 @@
         'title' => 'Header area',
         'controls' => [
           [
-            'id' => 'c-id-1'
+            'id' => 'c-id-1',
+            'label' => 'logo Upload',
+            'description' => 'If you intersted to change or update your logo you can do it.',
+            'section' => 'ft_header_area',
+            'setting' => 'ft_logo',
+          ],
+          [
+            'id' => 'c-id-2',
              'label' => 'logo Upload',
             'description' => 'If you intersted to change or update your logo you can do it.',
             'section' => 'ft_header_area',
             'setting' => 'ft_logo',
           ],
           [
-            'id' => 'c-id-2'
+            'id' => 'c-id-3',
              'label' => 'logo Upload',
             'description' => 'If you intersted to change or update your logo you can do it.',
             'section' => 'ft_header_area',
             'setting' => 'ft_logo',
           ],
-          [
-            'id' => 'c-id-3'
-             'label' => 'logo Upload',
-            'description' => 'If you intersted to change or update your logo you can do it.',
-            'section' => 'ft_header_area',
-            'setting' => 'ft_logo',
-          ]
-        ]
-          ],
-          [
-            
-          ]
+        ],        
+      ],
     ];
 
     foreach(  $sections as  $section ){
@@ -112,6 +112,8 @@
       'section' => 'ft_header_area'
   ) );
 
-  }
-
+  };
   add_action( 'customize_register', 'ft_customizar_register');
+
+// Menu  Register
+register_nav_menu('mani_menu', __('Main Menu', 'fastthemes' ));
