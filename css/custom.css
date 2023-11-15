@@ -3,6 +3,8 @@
 ========================================*/
 body {
   font-family: "Kaisei Decol", serif;
+  font-size: 15px;
+  line-height: 1.5em;
 }
 h1,
 h2,
@@ -31,11 +33,15 @@ img {
   list-style: none;
   text-align: right;
 }
-#header_area .col-md-9 ul li a span {
-  display: block;
-  font-size: 10px;
+#header_area .col-md-9 ul li {
+  display: inline-block;
+  position: relative;
 }
-  
+#header_area .col-md-9 ul li a span {
+  font-family: "Kaisei Decol", serif;
+  display: block;
+  font-size: 13px;
+}
 #header_area .col-md-9 ul li a {
   color: #262626;
   padding: 20px 10px;
@@ -58,6 +64,7 @@ img {
   text-align: left;
   top: 62px;
   width: 200px;
+  z-index: 99999;
 }
 #header_area .col-md-9 ul li:hover ul {
   left: 0px;
@@ -87,10 +94,6 @@ img {
   left: -99999px;
   top: 0;
   position: absolute;
-  text-align:left;
-  top: 62;
-  width: 200px;
-  z-index: 99999;
 }
 #header_area .col-md-9 ul li:hover ul li ul {
   left: -999999px;
@@ -135,6 +138,27 @@ img {
 #header_area.center_menu .col-md-9 ul {
   text-align: center;
 }
-#header_area.center_menu .col-md-9 ul ul{
+#header_area.center_menu .col-md-9 ul ul {
   text-align: left;
+}
+
+/*===========================================
+  Copyright Area Styling
+===========================================*/
+#copyright_area {
+  background: #292929;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+#copyright_area p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+}
+#copyright_area p a {
+  color: #ea1a70;
+}
+#copyright_area p a:hover {
+  text-decoration: underline;
 }
