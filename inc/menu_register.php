@@ -1,5 +1,5 @@
 <?php
-register_nav_menu( 'main_menu', __('Main Menu', 'alihossain') );
+register_nav_menu( 'main_menu', __('Main Menu', 'firstthemes') );
 
 // Walker Menu Properties
 function ft_nav_description( $item_output, $item, $args){

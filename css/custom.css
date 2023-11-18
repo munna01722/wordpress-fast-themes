@@ -19,6 +19,20 @@ img {
   max-width: 100%;
 }
 
+a.readmore {
+  background: #Ea1a70;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: navajowhite;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+a.readmore:hover{
+  background: #262626;
+ 
+}
 /*=======================================
  Header Area Style
 ========================================*/
@@ -141,6 +155,45 @@ img {
 #header_area.center_menu .col-md-9 ul ul {
   text-align: left;
 }
+#body_area{
+  padding: 45px 0;
+}
+#body_area .blog_area{
+  width: 100%;
+  margin-bottom: 15px ;
+}
+#body_area .post_thumb{
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px ;
+}
+#body_area .post_thumb img{
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#body_area .post_thumb:hover img{
+  transform:scale(1.1);
+}
+#body_area .post_details{
+  width: 100%;
+}
+#body_area .post_details h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+#body_area .post_details h2 a{
+  color:#262626;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#body_area .post_details h2 a:hover{
+  color: #ea1a70;
+}
+
+
+
 
 /*===========================================
   Copyright Area Styling
